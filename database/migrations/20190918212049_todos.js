@@ -1,5 +1,5 @@
 exports.up = function(knex) {
-  return knex.schema.createTable("totos", todos => {
+  return knex.schema.createTable("todos", todos => {
     todos.string("title", 120).notNullable();
   });
 };
